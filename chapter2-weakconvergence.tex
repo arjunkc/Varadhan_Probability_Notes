@@ -1,0 +1,21 @@
+\chapter{Weak Convergence}
+% I'd ideally prefer not to refer to pages by hard reference, but I don't have access to the latex and would rather not get it from Varadhan right now.
+% Start each page that you need to refer to in a new section
+\section{Page 19}
+We'll use the shorthand CF to represent characteristic function because of its frequent use in this chapter. The symbol $\phi(t)$ is most often used to represent the CF. The first exercise is straightforward calculation.
+\begin{exer}
+  \begin{enumerate}
+    \item The CF of degenerate distribution at $a$ is
+      \[ \int e^{i t x} d \delta_a(x) = e^{ita} \]
+    \item The CF of the binomial distribution is
+      \[ \sum_k \binom{n}{k} p^k (1-p)^{n-k} e^i t k = (p e^{it} + 1-p)^n \]
+  \end{enumerate}
+\end{exer}
+
+Theorem $2.1$ and it's proof are clearly explained.
+
+\begin{exer}
+  Show that if $\int |x| d\alpha(x) < \infty$, then $\phi(t)$ is continuously differentiable and $\phi'(0) = i \int x d\alpha$.
+
+  We first have to show that $\phi(t)$ is differentiable and so we consider the quotient,
+  \[ \frac{\phi(t+\Delta t) - \phi(t)}{\Delta t} = 

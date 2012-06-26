@@ -7,3 +7,23 @@ Goals:
 1) Provide additional notes summaries and explanations to the text. 
 2) Solve the problems in detail. 
 3) A grander idea is as follows: its so much easier to follow mathematical text when someone talks you through it. It's even nicer when you pause the person's voice, do your own calculations, and then continue; i.e., mathematical texts might be easier to appreciate if they're accompanied by an audiobook. Why audio and not just elaborate notes: classroom teaching is more effective than reading book, where one can see formulas and hear the professor's insight simultaneously. But, one only learns math well if one works through exercises themselves. Hence the audiobook companion to the text might work. 
+
+****Notes****
+Please read these notes:
+I created two new files shown below. The Varadhan_Probability_Notes.tex
+is a main file that contains the preamble of the latex file.
+The chapters are included with 
+\include{chapter2-weakconvergence}
+commands as seen in the Varadhan_Probability_Notes.tex file.
+
+Start your chapter file with
+\chapter{chapter1-introduction} or whatever the appropriate title is.
+
+New exercises start with
+\begin{exer}
+\end{exer}
+and they use amsthm theorem styles as seen in the preamble. I plan to
+comment on hard-to-understand parts of the text too so I refer to
+individual pages as 
+\section
+In the end we can replace these with whatever formatting we choose.

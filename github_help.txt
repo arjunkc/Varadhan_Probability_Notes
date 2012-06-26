@@ -199,3 +199,10 @@ git does its own globbing for characters like *,? etc. so escape these as
 follows:
 	git rm docs/\*.log
 which removes all log files from the docs directory.
+
+[github]
+My password is my usual old standard nonspecific password, with special characterers and numbers.
+
+I've created keys in my .ssh folder called id_rsa_github to access the account. It's under account_settings > ssh_keys
+
+You can add collaborators individually for repositories. Just go under the repository and go to admin > collaborators. Collaborators can do push requests.
