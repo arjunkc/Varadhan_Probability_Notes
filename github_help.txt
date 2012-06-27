@@ -92,7 +92,15 @@ If you didn't clone a remote branch, and you need to set a local branch to track
 	git checkout master
 	git fetch
 	git branch --track origin/master
-and it will set the local branch to track the remote branch.
+However this makes the remote branch track my local branch. So if you create a new repository locally and then push it upstream to your server, its possible that your local branch wont track the remote properly. So you can do
+[upstream] [set-upstream]
+	git branch --set-upstream master origin/master
+This effectively just does the following:
+	git config branch.master.remote origin
+	git config branch.master.merge refs/head/master
+# I don't quite understand what the second command does, but lets accept it for now.
+There is more info on this page:
+http://stackoverflow.com/questions/520650/how-do-you-make-an-existing-git-branch-track-a-remote-branch
 
 ** [pushing] [remote]
 	git push <remote> <from local branchname>:<to remote branch name>
