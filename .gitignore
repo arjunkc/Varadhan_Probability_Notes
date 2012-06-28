@@ -1,2 +1,4 @@
+*.aux
+*.log
 *.swp
 behzad_id_rsa.pub
