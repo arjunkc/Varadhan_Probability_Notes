@@ -18,4 +18,14 @@ Theorem $2.1$ and it's proof are clearly explained.
   Show that if $\int |x| d\alpha(x) < \infty$, then $\phi(t)$ is continuously differentiable and $\phi'(0) = i \int x d\alpha$.
 
   We first have to show that $\phi(t)$ is differentiable and so we consider the quotient,
-  \[ \frac{\phi(t+\Delta t) - \phi(t)}{\Delta t} = 
+  \begin{equation}
+    \frac{\phi(t+\Delta t) - \phi(t)}{\Delta t} = \int e^{i t x} \left( \frac{e^{i \delta t x} - 1}{\delta t} \right) d\alpha 
+    \label{eq:difference-quotient-CF}
+  \end{equation}
+  Taylor's theorem in complex analysis says that since $e^{iz}$ is an entire function (analytic in the entire plane)
+  \begin{equation}
+    e^{iz} = 1 + i z + O(z^2) 
+  \end{equation}
+  in a fixed neighbourhood of the origin. So, we can dominate the integrand on the RHS of~\Eqref{eq:difference-quotient-CF} as
+  \[|e^{i t x} \left( \frac{e^{i \delta t x} - 1}{\delta t} \right)| \leq 
+\end{exer}
